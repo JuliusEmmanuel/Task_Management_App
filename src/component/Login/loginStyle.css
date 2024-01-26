@@ -1,0 +1,102 @@
+.loginArena{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(3, 3, 72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 30%;
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    gap: 20px;
+}
+.theForm{
+    width: 80%;
+    height: auto;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.theformTop{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.theformTop > h1{
+    font-size: 40px;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+}
+
+.theformBody{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.theInput{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.theInput > input{
+    width: 97%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    padding-left: 10px;
+    outline: none;
+}
+.theInput > input:hover{
+    border: 1px solid rgb(181, 178, 178);
+}
+.theInput > p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.signupBtn{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(110, 110, 235);
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: Arial;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    /* margin-bottom: 20px; */
+}
+.signupBtn:hover{
+    background-color: rgb(85, 85, 200);
+}
+
+.theformBody > p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Link{
+    color: rgb(5, 5, 255);
+    text-decoration: none;
+}

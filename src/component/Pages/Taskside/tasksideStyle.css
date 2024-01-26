@@ -1,0 +1,489 @@
+.taskSide{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(30, 33, 44);
+}
+
+.taskHeader{
+    width: 100%;
+    height: 11%;
+    background-color: rgb(47, 52, 73);
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+.taskHeaderLeft{
+    width: auto;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+.taskHeaderRight{
+    width: 30%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.taskHeaderRightBtn{
+    width: 37%;
+    height: 60%;
+    background-color: rgb(110, 110, 235);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 350ms ease-in;
+}
+.taskHeaderRightBtn:hover{
+    transform: scale(1.06);
+    background-color: rgb(95, 95, 208);
+}
+
+.taskHeaderRightProfile{
+    width: 40%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.profilecircle{
+    width: 40%;
+    height: 75%;
+    background-color: rgb(110, 110, 235);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.profileLogout{
+    padding: 20px;
+    background-color: rgb(98, 98, 146);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -70px;
+    cursor: pointer;
+    animation: fadeInDown;
+    animation-duration: 1s; 
+    text-decoration: none;
+}
+.revealSidebar{
+    width: 130px;
+    height: 50px;
+    background-color: rgb(110, 110, 235);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.revealSidebar:hover{
+    background-color: rgb(85, 85, 211);
+}
+
+.taskBody{
+    width: 100%;
+    height: 88.5%;
+    overflow-y: scroll;
+    display: flex;
+    /* background-color: yellow; */
+}
+.todoPart{
+    width: 26%;
+    height: auto;
+    /* background-color: yellow; */
+    margin-left: 50px;
+    padding-top: 30px;
+    /* margin-top: 20px; */
+}
+.todoPartTop{
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.todoPartTop > p{
+    font-size: 20px;
+    color: grey;
+    font-weight: 500;
+}
+.todoPartcircle{
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    border-radius: 50px;
+    border: none;
+}
+.theTaskPart{
+    width: 100%;
+    height: auto;
+}
+
+.theTask{
+    width: 90%;
+    padding: 10px 20px;
+    background-color: rgb(47, 52, 73);
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.task{
+    width: 90%;
+    padding: 10px 20px;
+    background-color:  transparent;
+    margin-top: 20px;
+    
+}
+.task > h3{
+    margin-bottom: -15px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.task > p{
+    color: grey;
+    font-size: 18px;
+}
+
+.deleteTask{
+    color: red;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 350ms ease-in-out;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+.deleteTask:hover{
+    transform: scale(1.06);
+    background-color: rgb(57, 66, 101);
+}
+
+.doingPart{
+    width: 26%;
+    height: auto;
+    /* background-color: yellow; */
+    margin-left: 50px;
+    padding-top: 30px;
+    /* margin-top: 20px; */
+}
+.doingPartTop{
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.doingPartTop > p{
+    font-size: 20px;
+    color: grey;
+    font-weight: 500;
+}
+.doingPartcircle{
+    width: 20px;
+    height: 20px;
+    background-color:  rgb(97, 97, 217);
+    border-radius: 50px;
+    border: none;
+}
+
+.donePart{
+    width: 26%;
+    height: auto;
+    /* background-color: yellow; */
+    margin-left: 50px;
+    padding-top: 30px;
+    /* margin-top: 20px; */
+}
+.donePartTop{
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.donePartTop > p{
+    font-size: 20px;
+    color: grey;
+    font-weight: 500;
+}
+.donePartCircleircle{
+    width: 20px;
+    height: 20px;
+    background-color: aquamarine;
+    border-radius: 50px;
+    border: none;
+}
+
+.createTaskShadow{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(18, 17, 17, 0.78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.createTask{
+    width: 23%;
+    height: 80%;
+    background-color: rgb(40, 43, 58);
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+.createTaskTop{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.createTaskTop > button{
+    width: 90px;
+    height: 38px;
+    background-color: rgb(110, 110, 235);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.createTaskTop > button:hover{
+    background-color: rgb(98, 98, 213)
+}
+.createTaskTop > h3{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.titleInput{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+label{
+    color: white;
+}
+.titleInput > textarea{
+    width: 96%;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    background-color: transparent;
+    border: 1px solid grey;
+    color: white;
+    margin-top: 5px;
+
+}
+
+.DescriptionInput{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.label{
+    color: white;
+}
+.DescriptionInput > textarea{
+    width: 96%;
+    height: 100px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    background-color: transparent;
+    border: 1px solid grey;
+    color: white;
+    margin-top: 5px;
+}
+
+.subtasksInput{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.subtasksInputDiv{
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+.subtasksInputDiv > input{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    background-color: transparent;
+    border: 1px solid grey;
+    color: white;
+    margin-top: 10px;
+}
+.deleteSubtask{
+    width: 10%;
+    height: 40px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightgrey;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 350ms ease-in-;
+}
+.deleteSubtask:hover{
+    transform: scale(1.1);
+    color: rgb(149, 149, 149);
+}
+
+.addNewSubtaskBtn{
+    width: 100%;
+    height: 53px;
+    background-color: whitesmoke;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.addNewSubtaskBtn:hover{
+    background-color: rgb(227, 219, 219);
+}
+
+.statusInput{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.statusInput > select{
+    width: 96%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    background-color: transparent;
+    border: 1px solid grey;
+    color: grey;
+    margin-top: 5px;
+    
+}
+
+.createTaskBtn{
+    width: 100%;
+    height: 53px;
+    background-color: rgb(110, 110, 235);
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: white;
+}
+.createTaskBtn:hover{
+    background-color: rgb(92, 92, 200);
+}
+
+.confirmBoardtop{
+    width: 85%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.confirmBoardTopBtn{
+    padding: 10px 15px;
+    background-color: rgb(40, 40, 106);
+    color: lightgrey;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 350ms ease-in-out;
+}
+.confirmBoardTopBtn:hover{
+    transform: scale(1.06);
+}
+.confirmNewBoard{
+    width: 350px;
+    height: 330px;
+    background-color: rgb(65, 77, 126);
+    box-shadow: 0px 0px 50px 1100px rgba(0, 0, 0, 0.432);
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.confirmBoardText{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+.confirmNewBoard > input{
+    width: 80%;
+    height: 50px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    background-color: white;
+}
+.confirmNewBoard > input:hover{
+    border: 1px solid rgb(31, 30, 30);
+}
+.confirmNewBoardBtn{
+    width: 85%;
+    height: 50px;
+    background-color: rgb(110, 110, 235);
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.confirmNewBoardBtn:hover{
+    background-color: rgb(92, 92, 200);
+}

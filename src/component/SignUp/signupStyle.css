@@ -1,0 +1,101 @@
+.signupArena{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(3, 3, 72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.form{
+    width: 35%;
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 4px 1px lightgrey;
+}
+.theForm{
+    width: 90%;
+    height: auto;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.theformTop{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.theformTop > h1{
+    font-size: 40px;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+}
+
+.theformBody{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.theInput{
+    width: 100%;
+    height: auto;
+    margin-bottom: -10px;
+}
+.theInput > input{
+    width: 97%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    padding-left: 10px;
+    outline: none;
+}
+.theInput > input:hover{
+    border: 1px solid rgb(181, 178, 178);
+}
+.theInput > p{
+    font-size: 20px;
+    font-weight: 400;
+    /* margin-bottom: 10px; */
+}
+
+.signupBtn{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(110, 110, 235);
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: Arial;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    /* margin-bottom: 20px; */
+}
+
+.signupFooter{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+}
+.Link{
+    color: rgb(5, 5, 255);
+    text-decoration: none;
+}
